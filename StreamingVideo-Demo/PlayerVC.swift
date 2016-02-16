@@ -176,7 +176,7 @@ class PlayerVC: UIViewController {
     }
     
     
-    //MARK: - KVO Observation
+    //MARK: - KVO
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         guard context == &mediaPlayerViewControllerKVOContext else {
             super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)

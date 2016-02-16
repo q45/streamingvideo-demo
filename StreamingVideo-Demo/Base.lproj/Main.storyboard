@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="50" id="uRB-f9-zyT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-:--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dy-yr-x6H">
@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="width" constant="43" id="x3s-37-Ide"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="usp-fI-dTR">
@@ -113,6 +113,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="C43-1h-HFu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="12S-Cp-Rrm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c7Y-oQ-IRm" secondAttribute="bottom" id="2xH-82-brQ"/>
                             <constraint firstItem="qKD-Jj-Iw4" firstAttribute="top" secondItem="5dy-yr-x6H" secondAttribute="bottom" id="8XJ-ld-4c2"/>
                             <constraint firstAttribute="trailing" secondItem="c7Y-oQ-IRm" secondAttribute="trailing" id="AAZ-1I-rsM"/>
                             <constraint firstItem="c7Y-oQ-IRm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HcZ-ni-Aws"/>
@@ -126,6 +127,17 @@
                             <constraint firstItem="qKD-Jj-Iw4" firstAttribute="top" secondItem="C43-1h-HFu" secondAttribute="bottom" id="u1H-fZ-t0g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qKD-Jj-Iw4" secondAttribute="bottom" constant="50" id="ue2-FF-JZP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2xH-82-brQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="2xH-82-brQ"/>
+                                <exclude reference="sNr-uZ-kBb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="durationLabel" destination="5dy-yr-x6H" id="US8-hB-PWg"/>
